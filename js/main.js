@@ -1,0 +1,1 @@
+// JS base para futuras funcionalidades do site SNT Almada 
