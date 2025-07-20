@@ -5,22 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arena Kids - SNT Almada</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/arena-kids.css">
+  <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
   <header>
-    <img src="assets/iconsnt.png" alt="Logo SNT Almada" class="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="about.html">Sobre</a></li>
-        <li><a href="events.html">Eventos</a></li>
-        <li><a href="arena.html">Arena</a></li>
-        <li><a href="arena-kids.html">Arena Kids</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="contact.html">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <img src="assets/iconsnt.png" alt="Logo SNT Almada" class="logo">
+      <nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="events.html">Eventos</a></li>
+          <li><a href="arena.html">Arena</a></li>
+          <li><a href="arena-kids.html">Arena Kids</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
   <main>
     <section>
       <h1>Arena Kids</h1>

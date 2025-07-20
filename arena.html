@@ -5,32 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arena - SNT Almada</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/arena.css">
+  <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
   <header>
-    <img src="assets/iconsnt.png" alt="Logo SNT Almada" class="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="about.html">Sobre</a></li>
-        <li><a href="events.html">Eventos</a></li>
-        <li><a href="arena.html">Arena</a></li>
-        <li><a href="arena-kids.html">Arena Kids</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="contact.html">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <img src="assets/iconsnt.png" alt="Logo SNT Almada" class="logo">
+      <nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="events.html">Eventos</a></li>
+          <li><a href="arena.html">Arena</a></li>
+          <li><a href="arena-kids.html">Arena Kids</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
   <main>
     <section>
       <h1>Arena</h1>
       <p>Ministério para jovens até 30 anos. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <h2>Líderes</h2>
+      <h2>Líderes do Arena</h2>
       <div class="pastores-grid">
         <div class="pastor-card">
-          <img src="assets/ritson-irineia.jpg" alt="Ritson e Irineia">
-          <h3>Ritson & Irineia</h3>
-          <p>Líderes do Arena.</p>
+          <img src="assets/ritson-naiha.png" alt="Ritson e Irineia">
+          <h3>Pr.Ritson Oliveira & Pra. Inaiha Oliveira</h3>
         </div>
       </div>
     </section>

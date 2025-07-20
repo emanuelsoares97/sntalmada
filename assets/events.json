@@ -1,0 +1,82 @@
+[
+  {
+    "titulo": "Culto Celebração",
+    "imagem": "assets/yeshua.jpg",
+    "dia": "Domingo",
+    "data": "30/06/2024",
+    "hora": "18h",
+    "descricao": "Culto de Celebração."
+  },
+  {
+    "titulo": "Culto Celebração",
+    "imagem": "assets/yeshua1.jpg",
+    "dia": "Sábado",
+    "data": "29/06/2024",
+    "hora": "",
+    "descricao": "Culto de Celebração."
+  },
+  {
+    "titulo": "Semana da Família - Pausa",
+    "imagem": "assets/yeshua2.jpg",
+    "dia": "Terça-feira",
+    "data": "25/06/2024",
+    "hora": "",
+    "descricao": "Semana da Família - Pausa."
+  },
+  {
+    "titulo": "Culto Celebração",
+    "imagem": "assets/yeshua.jpg",
+    "dia": "Domingo",
+    "data": "22/06/2024",
+    "hora": "",
+    "descricao": "Culto de Celebração."
+  },
+  {
+    "titulo": "Conferência On Fire 2.0 - Arena Jovem",
+    "imagem": "assets/yeshua1.jpg",
+    "dia": "Sexta-feira",
+    "data": "20/06/2024",
+    "hora": "",
+    "descricao": "Conferência especial para jovens."
+  },
+  {
+    "titulo": "Culto Celebração",
+    "imagem": "assets/yeshua2.jpg",
+    "dia": "Domingo",
+    "data": "15/06/2024",
+    "hora": "",
+    "descricao": "Culto de Celebração."
+  },
+  {
+    "titulo": "Culto Celebração",
+    "imagem": "assets/yeshua.jpg",
+    "dia": "Sábado",
+    "data": "14/06/2024",
+    "hora": "",
+    "descricao": "Culto de Celebração."
+  },
+  {
+    "titulo": "Arena Kids - Dia das Crianças",
+    "imagem": "assets/yeshua1.jpg",
+    "dia": "Sábado",
+    "data": "07/06/2024",
+    "hora": "",
+    "descricao": "Evento especial para as crianças."
+  },
+  {
+    "titulo": "Man Up - Chill Out",
+    "imagem": "assets/yeshua2.jpg",
+    "dia": "Sexta-feira",
+    "data": "06/06/2024",
+    "hora": "",
+    "descricao": "Encontro de homens."
+  },
+  {
+    "titulo": "Culto Celebração",
+    "imagem": "assets/yeshua.jpg",
+    "dia": "Domingo",
+    "data": "01/06/2024",
+    "hora": "",
+    "descricao": "Culto de Celebração."
+  }
+] 
