@@ -28,23 +28,26 @@
     async function enviarPergunta() {
         let pergunta = input.value.trim();
         if (!pergunta || processando) return;
-        addMsg("<b>Você:</b> " + pergunta, 'user');
+        addMsg("<b>Tu:</b> " + pergunta, 'user');
         input.value = ""; btn.disabled = true; processando = true;
         addMsg("⏳...", 'bot');
 
         try {
-            const resp = await fetch('/api/chat/', {
+            const resp = await fetch('http://localhost:8000/api/v1/chatbot/chat/', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({pergunta: pergunta, sessao_id: sessao_id})
+                body: JSON.stringify({
+                    pergunta: pergunta,
+                    sessao_id: sessao_id // Envia o id da sessão se houver
+                })
             });
             const data = await resp.json();
             if (mensagens.lastChild) mensagens.lastChild.remove();
-            addMsg("<b>Bot:</b> " + (data.resposta || data.erro || 'Erro ao processar a resposta.'));
+            addMsg("<b>Chat:</b> " + (data.resposta || data.mensagem || data.erro || 'Ocorreu um erro ao processar a resposta.'), 'bot');
             sessao_id = data.sessao_id || sessao_id;
         } catch(e) {
             if (mensagens.lastChild) mensagens.lastChild.remove();
-            addMsg("<b>Bot:</b> Erro de conexão. Verifique se o servidor está online e tente novamente.");
+            addMsg("<b>Chat:</b> Erro de ligação. Verifica se o servidor está online e tenta novamente.", 'bot');
         } finally {
             btn.disabled = false; processando = false;
         }
