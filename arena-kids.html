@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/arena-kids.css">
   <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/chat.css">
 </head>
 <body>
   <header>
@@ -14,7 +15,11 @@
       <img src="assets/iconsnt.png" alt="Logo SNT Almada" class="logo">
       <nav>
         <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
-          <span class="hamburger"></span>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="7" width="32" height="3.5" rx="1.75" fill="#2563eb"/>
+            <rect y="14" width="32" height="3.5" rx="1.75" fill="#a21caf"/>
+            <rect y="21" width="32" height="3.5" rx="1.75" fill="#ec4899"/>
+          </svg>
         </button>
         <ul class="nav-list">
           <li><a href="index.html">Início</a></li>
@@ -44,8 +49,28 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 SNT Almada. Todos os direitos reservados.</p>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/snt_almada/" target="_blank" aria-label="Instagram">📸 Instagram</a>
+      <a href="https://www.facebook.com/SntAlmada" target="_blank" aria-label="Facebook">📘 Facebook</a>
+      <a href="https://www.youtube.com/@sara_almada" target="_blank" aria-label="YouTube">▶️ YouTube</a>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2024 SNT Almada. Todos os direitos reservados.</p>
+    </div>
   </footer>
+  <div id="chatBiblicoWidget" style="display:none;">
+      <div id="chatBiblicoHeader">
+          <span>📖 Chat Bíblico</span>
+          <button id="chatBiblicoMinimizar" title="Fechar">&minus;</button>
+      </div>
+      <div id="chatBiblicoMensagens"><div style="color: #6b7280; font-size: 15px;">Só respondo a perguntas sobre a Bíblia.<br>Como posso te ajudar?</div></div>
+      <div id="chatBiblicoInputArea">
+          <input id="chatBiblicoInput" type="text" placeholder="Pergunte sobre a Bíblia..." maxlength="300">
+          <button id="chatBiblicoBtn">Enviar</button>
+      </div>
+  </div>
+  <button id="chatBiblicoAbrir">📖 <span class="chat-text">Chat Bíblico</span></button>
   <script src="js/main.js"></script>
+  <script src="js/chat.js"></script>
 </body>
 </html> 

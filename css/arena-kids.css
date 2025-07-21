@@ -13,9 +13,19 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 .pastor-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 600px) {
+    .pastor-card img {
+        max-width: 90vw;
+        max-height: 220px;
+    }
 } 
