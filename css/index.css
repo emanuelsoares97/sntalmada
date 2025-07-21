@@ -100,45 +100,31 @@
 @media (max-width: 900px) {
     .reunioes-cards {
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.7rem;
         padding: 0;
         margin: 0;
-        width: 100%;
+        width: 100vw;
         box-sizing: border-box;
     }
-    
     .reunioes-card {
-        width: calc(100% - 2rem);
-        margin: 0 1rem 1rem;
-        padding: 1rem;
+        width: 100vw;
+        margin: 0 0 0.7rem 0;
+        padding: 0.7rem 0.5rem;
         box-sizing: border-box;
         font-size: 0.9rem;
+        border-radius: 0;
     }
-    
     .reunioes-card h2 {
-        font-size: 1.2rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
     }
-    
-    .reunioes-list {
-        padding-left: 1.2rem;
-        margin: 0.5rem 0;
-        list-style-position: outside;
-    }
-    
-    .reunioes-list li {
-        margin-bottom: 0.5rem;
-        line-height: 1.4;
-    }
-    
     .btn-group {
-        margin-top: 1rem;
+        margin-top: 0.7rem;
         display: flex;
         justify-content: center;
     }
-    
     .btn-localidades, .btn-online {
-        padding: 0.6rem 1.2rem;
+        padding: 0.5rem 0.7rem;
         font-size: 0.9rem;
         width: auto;
         min-width: 0;

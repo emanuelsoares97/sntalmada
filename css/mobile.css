@@ -8,25 +8,22 @@
         width: 70vw;
         background: var(--white);
         box-shadow: -2px 0 16px rgba(0,0,0,0.15);
-        z-index: 1001;
+        z-index: 2001;
         padding-top: 70px;
         transition: transform 0.3s ease;
         transform: translateX(100%);
         margin: 0;
     }
-    
     .nav-list.open {
         transform: translateX(0);
         right: 0;
     }
-    
     .nav-list li {
         margin: 0;
         padding: 0;
         display: block;
         width: 100%;
     }
-    
     .nav-list a {
         display: block;
         padding: 1rem 2rem;
@@ -36,22 +33,21 @@
         box-sizing: border-box;
         text-decoration: none;
         color: var(--black);
+        cursor: pointer;
+        background: none;
     }
-    
     .nav-list a:hover {
         background: rgba(0,0,0,0.05);
     }
-    
     .nav-list li:last-child a {
         border-bottom: none;
     }
-    
     .nav-toggle {
         display: block;
         position: fixed;
         top: 1.2rem;
         right: 1rem;
-        z-index: 1100;
+        z-index: 2100;
         background: none;
         border: none;
         cursor: pointer;
@@ -61,7 +57,6 @@
         border-radius: 4px;
         -webkit-tap-highlight-color: transparent;
     }
-    
     .mobile-overlay {
         display: none;
         position: fixed;
@@ -70,12 +65,11 @@
         width: 100vw;
         height: 100vh;
         background: rgba(0,0,0,0.5);
-        z-index: 1000;
+        z-index: 2000;
         opacity: 0;
         transition: opacity 0.3s ease;
         -webkit-tap-highlight-color: transparent;
     }
-    
     .mobile-overlay.active {
         display: block;
         opacity: 1;
@@ -85,6 +79,18 @@
 @media (min-width: 701px) {
     .nav-toggle, .mobile-overlay {
         display: none !important;
+    }
+    .nav-list {
+        position: static !important;
+        transform: none !important;
+        box-shadow: none !important;
+        background: none !important;
+        z-index: auto !important;
+    }
+    .nav-list a {
+        cursor: pointer;
+        color: var(--black);
+        background: none;
     }
 } 
 
