@@ -33,7 +33,7 @@
         addMsg("⏳...", 'bot');
 
         try {
-            const resp = await fetch('http://localhost:8000/api/v1/chatbot/chat/', {
+            const resp = await fetch('https://sntalmada-backend-production.up.railway.app/api/v1/chatbot/chat/', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
