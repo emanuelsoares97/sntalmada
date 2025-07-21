@@ -1,46 +1,44 @@
 @media (max-width: 700px) {
     .nav-list {
-        display: block;
+        display: none;
         position: fixed;
         top: 0;
-        right: -100%;
-        height: 100vh;
+        right: 0;
         width: 70vw;
-        background: var(--white);
-        box-shadow: -2px 0 16px rgba(0,0,0,0.15);
-        z-index: 2001;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         padding-top: 70px;
-        transition: transform 0.3s ease;
-        transform: translateX(100%);
+        z-index: 2001;
         margin: 0;
+        box-shadow: -2px 0 16px rgba(0,0,0,0.15);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
     }
     .nav-list.open {
+        display: flex;
         transform: translateX(0);
-        right: 0;
     }
     .nav-list li {
+        width: 100%;
         margin: 0;
         padding: 0;
-        display: block;
-        width: 100%;
+        border-bottom: 1px solid #eee;
     }
     .nav-list a {
         display: block;
-        padding: 1rem 2rem;
         width: 100%;
+        padding: 1.2rem 2rem;
         font-size: 1.1rem;
-        border-bottom: 1px solid rgba(0,0,0,0.1);
-        box-sizing: border-box;
+        color: #111;
         text-decoration: none;
-        color: var(--black);
-        cursor: pointer;
         background: none;
+        cursor: pointer;
     }
     .nav-list a:hover {
-        background: rgba(0,0,0,0.05);
-    }
-    .nav-list li:last-child a {
-        border-bottom: none;
+        background: #f3f4f6;
     }
     .nav-toggle {
         display: block;
@@ -55,42 +53,30 @@
         width: 40px;
         height: 40px;
         border-radius: 4px;
-        -webkit-tap-highlight-color: transparent;
-    }
-    .mobile-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0,0,0,0.5);
-        z-index: 2000;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        -webkit-tap-highlight-color: transparent;
-    }
-    .mobile-overlay.active {
-        display: block;
-        opacity: 1;
     }
 }
-
 @media (min-width: 701px) {
-    .nav-toggle, .mobile-overlay {
+    .nav-toggle {
         display: none !important;
     }
     .nav-list {
+        display: flex !important;
         position: static !important;
-        transform: none !important;
-        box-shadow: none !important;
+        flex-direction: row !important;
+        width: auto !important;
+        height: auto !important;
         background: none !important;
+        padding-top: 0 !important;
         z-index: auto !important;
+        box-shadow: none !important;
+        transform: none !important;
+    }
+    .nav-list li {
+        border-bottom: none !important;
     }
     .nav-list a {
-        cursor: pointer;
-        color: var(--black);
-        background: none;
+        padding: 0.5rem 1rem !important;
+        font-size: 1rem !important;
     }
 } 
 
