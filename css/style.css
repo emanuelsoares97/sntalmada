@@ -48,12 +48,12 @@ header {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0.7rem 1rem;
+    padding: 1rem 1rem; /* Aumentado de 0.7rem */
     box-sizing: border-box;
 }
 
 .logo {
-    width: 60px;
+    width: 70px; /* Aumentado de 60px */
     height: auto;
     transition: transform 0.3s ease;
     display: block;
@@ -106,7 +106,7 @@ nav a:hover::after {
 main {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 5rem 1rem 2rem;
+    padding: 6rem 1rem 2rem; /* Aumentado de 5rem */
 }
 
 section {
@@ -206,5 +206,11 @@ section, .contact-info {
     }
     h1 {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        margin-top: 4.5rem;
     }
 } 
