@@ -38,6 +38,7 @@
 }
 
 .event-card h2 {
+    padding-top: 10px;
     margin: 0 0 1rem 0;
     font-size: 1.3rem;
     color: var(--primary-dark);
